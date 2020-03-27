@@ -1,0 +1,30 @@
+extends ./_base
+
+block title
+  | Beranda
+
+block vars
+  - var bodyClass = 'beranda'
+
+block content
+  section.Sm-hero.text-white.align-items-center.d-flex
+    .container
+      .row
+        .col.hero-text
+          h1 Bantu Tenaga Medis
+          h4.my-3.font-weight-normal Yuk bantu para tenaga medis agar mereka dapat <br> bekerja dengan baik, untuk kita semua.
+        .col-4
+          .card.bg-primary
+            .card-body
+              h3 Donasi
+              p #[strong Bank Mandiri Syariah] <br> 7008-3672-48 <br>Lazis Masjid Syuhada
+              p #[strong Bank BTPN] <br> 9002-0359-424 / Cashtag: $alatmedis <br> Banu Desi Antoro
+              p #[strong Bank BNI 46] <br> 0258-6729-56 <br> Perkumpulan Masyarakat Peduli Media
+              p #[strong Bank BCA] <br> 8030-0509-84 <br> Astrid Arum Lestari
+              p.small.mb-0 Untuk donasi berupa barang, silakan kontak WhatsApp ke #[a.text-white.font-weight-bold(href="https://wa.me/6281234567890") 0812 3456 7890]
+
+  .grafik.text-center.py-5
+    .container
+      h2.mb-5 Grafik Supply and Demand
+      .border.p-2.d-inline-block.bg-white
+        <iframe width="600" height="371" seamless="" frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS_7ee-xt0k9my-wxfXlL7oGnuXrg6HJYGlUq0SJ5MjILmBbMd8ikt83VqnwvSmHU-41daOr-yWcfZ1/pubchart?oid=1622217881&amp;format=interactive"></iframe>

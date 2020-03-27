@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import 'node_modules/bootstrap/scss/_functions.scss';
+@import '_bootstrap-var-overrides.scss';
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+body {
+  background: #f6f6f6;
+}
+
+.navbar {
+  width: 100%;
+  z-index: 1;
+
+  .beranda & {
+    margin-bottom: 0!important;
+  }
+}
+
+.Sm-header {
+  padding: 1rem 0;
+}
+
+.site-title {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.navbar-nav a {
+  text-decoration: none;
+}
+
+.navbar-nav a:hover,
+.navbar-nav .active {
+  border-bottom: 2px solid $primary;
+}
+
+.navbar-nav .active {
+  font-weight: 600;
+}
+
+.Sm-hero {
+  position: relative;
+  height: 80vh;
+
+  &:before {
+    content: '';
+    background: transparent url(../img/nakes-1.jpg) no-repeat;
+    background-size: cover;
+    filter: grayscale(80%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.hero-text {
+  text-shadow: 1px 2px 0 #000;
+}
