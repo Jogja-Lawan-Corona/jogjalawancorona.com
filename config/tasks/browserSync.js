@@ -1,6 +1,6 @@
 import gulp from 'gulp'
 import browserSync from 'browser-sync'
-import runSequence from 'run-sequence'
+import runSequence from 'gulp4-run-sequence'
 
 import config from '../config'
 
@@ -16,6 +16,6 @@ gulp.task('bundling', cb => {
 })
 
 
-gulp.task('browserSync', ['bundling'], () => {
+gulp.task('browserSync', gulp.series('bundling', () => {
   browserSync.init(config.browserSync)
-})
+}))
