@@ -1541,3 +1541,25 @@ textarea.input {
   border-color: #83ba09;
   background: #83ba09;
 }
+
+
+
+/*
+
+*/
+
+#main-navbar > div > div.navbar-header > div > a > h3 {
+  padding-top: 15px;
+}
+
+#home-owl > div.owl-stage-outer > div > div.owl-item.active > div > div.section-bg {
+  -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(80%);
+}
+
+#home-owl > div.owl-stage-outer > div > div:nth-child(3) > div > div.home > div > div > div {
+  background-color: black;
+  padding: 20px;
+  opacity: 70%;
+  border-radius: 10px;
+}
