@@ -1,0 +1,22 @@
+doctype html
+html(lang="en-US")
+  head
+    meta(charset="utf-8")
+    meta(content="width=device-width, initial-scale=1.0" name="viewport")
+    title
+      block title
+    link(rel="stylesheet", href="/css/style.css")
+    script(async src="https://www.googletagmanager.com/gtag/js?id=UA-162010302-1")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-162010302-1');
+  - var bodyClass = '';
+  block vars
+
+  body(class=bodyClass)
+    include header
+    block content
+    include footer
