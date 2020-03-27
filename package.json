@@ -10,8 +10,8 @@
     "bootstrap": "^4.4.1"
   },
   "devDependencies": {
-    "babel-core": "^6.18.2",
-    "babel-preset-env": "^1.6.1",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
     "browser-sync": "^2.26.7",
     "css-mqpacker": "^7.0.0",
     "gulp": "^4.0.2",
